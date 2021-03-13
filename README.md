@@ -50,14 +50,16 @@ landmark points we are interested in to apply lipstick and blush
 
  ## apply lipstick
  1. Create a mask for the upper lip
- - select the points from the 68 points. e.g. array [48,49,50,51,52,53,54,61,62,63]
- - using convexHull method on the points found. This is important! more [information](https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/)
- - Create image of the same size as the source image but all black
- - use the fillConvexPoly method using points from convexHull and the black image created in the previous step
+  - select the points from the 68 points. e.g. array [48,49,50,51,52,53,54,61,62,63]
+  - using convexHull method on the points found. This is important! more [information](https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/)
+  - Create image of the same size as the source image but all black
+  - use the fillConvexPoly method using points from convexHull and the black image created in the previous step
  3. Create a mask for the lower lip
- - same steps as above
+  - same steps as above
  4. Combine the mask together
- - to combine the the two masks created use the addWeighted function with the weights of 1 for alpha and beta, more [information](https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html) 
+  - to combine the the two masks created use the addWeighted function with the weights of 1 for alpha and beta, more [information](https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html) 
+  - example of the mask
+![](https://github.com/clintonvanry/VirtualMakeUp/blob/main/lipmask.jpg)
 
 
  
