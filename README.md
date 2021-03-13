@@ -58,8 +58,15 @@ landmark points we are interested in to apply lipstick and blush
   - same steps as above
  4. Combine the mask together
   - to combine the the two masks created use the addWeighted function with the weights of 1 for alpha and beta, more [information](https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html) 
+ 5. Before combining the mask with the image we need to soften the mask to remove any hard edges. This is done by using the following techniques
+  - erode the mask using the erode function from OpenCV
+  - blur the mask using GaussianBlur
   - example of the mask
-![](https://github.com/clintonvanry/VirtualMakeUp/blob/main/lipmask.jpg)
+  ![](https://github.com/clintonvanry/VirtualMakeUp/blob/main/lipmask.jpg)
+ 6. Combine the mask to image the addWeighted function.
+  - note that alpha will be 0.1 and beta = 1.0 - alpha.
+ Result 
+  ![](https://github.com/clintonvanry/VirtualMakeUp/blob/main/lip.jpg)
 
 
  
