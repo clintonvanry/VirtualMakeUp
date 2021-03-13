@@ -39,7 +39,8 @@ frontal_face_detector faceDetector = get_frontal_face_detector();
 dlib::full_object_detection landmarks = landmarkDetector(dlibIm, scaledRect);
 `
 
-![68 landmark points][https://github.com/clintonvanry/VirtualMakeUp/dlib68points.png]
+![68 landmark points][https://github.com/clintonvanry/VirtualMakeUp/blob/main/dlib68points.png]
+
  
 
 
