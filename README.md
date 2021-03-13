@@ -1,5 +1,4 @@
 # VirtualMakeUp Project
----
 
 This is an article how to apply makeup to an image using OpenCV and Dlib libraries
 
