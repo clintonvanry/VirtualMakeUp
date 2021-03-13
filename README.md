@@ -65,7 +65,8 @@ landmark points we are interested in to apply lipstick and blush
   ![](https://github.com/clintonvanry/VirtualMakeUp/blob/main/lipmask.jpg)
  6. Combine the mask to image the addWeighted function.
   - note that alpha will be 0.1 and beta = 1.0 - alpha.
- Result 
+  
+ ### Result 
   ![](https://github.com/clintonvanry/VirtualMakeUp/blob/main/lip.jpg)
 
 
